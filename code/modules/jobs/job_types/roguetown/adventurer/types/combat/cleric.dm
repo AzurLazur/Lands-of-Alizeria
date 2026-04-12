@@ -1,6 +1,6 @@
 /datum/advclass/cleric
 	name = "Wandering Monk"
-	tutorial = "Вы — странствующий послушник, владеющий как чудесами, так и боевыми искусствами. Вы отказываетесь от тяжелых доспехов, которые носят паладины, в пользу более ловкого подхода к бою, используя кулаки."
+	tutorial = "Ты — странствующий послушник, владеющий как чудесами, так и боевыми искусствами. Ты отказываешься от тяжелых доспехов, которые носят паладины, в пользу более ловкого подхода к бою, используя кулаки."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	vampcompat = FALSE
@@ -34,7 +34,7 @@
 
 /datum/outfit/job/adventurer/cleric/monk/pre_equip(mob/living/carbon/human/H)
 	..()
-	to_chat(H, span_warning("Вы — странствующий послушник, владеющий как чудесами, так и боевыми искусствами. Вы отказываетесь от тяжелых доспехов, которые носят паладины, в пользу более ловкого подхода к бою, используя кулаки."))
+	to_chat(H, span_warning("Ты — странствующий послушник, владеющий как чудесами, так и боевыми искусствами. Ты отказываешься от тяжелых доспехов, которые носят паладины, в пользу более ловкого подхода к бою, используя кулаки."))
 	H.adjust_blindness(-3)
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/priest
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/monk
@@ -205,7 +205,7 @@
 
 /datum/advclass/cleric/paladin
 	name = "Paladin"
-	tutorial = "Святой воин. В то время как другие священнослужители проводили свободное время за изучением писаний, вы оттачивали свое мастерство владения клинком."
+	tutorial = "Святой воин. В то время как другие священнослужители проводили свободное время за изучением писаний, ты оттачивал свое мастерство владения клинком."
 	outfit = /datum/outfit/job/adventurer/cleric/paladin
 	subclass_social_rank = SOCIAL_RANK_YEOMAN
 
@@ -231,7 +231,7 @@
 	)
 
 /datum/outfit/job/adventurer/cleric/paladin/pre_equip(mob/living/carbon/human/H)
-	to_chat(H, span_warning("A holy warrior. Where others of the clergy may have spent their free time studying scriptures, you have instead honed your skills with a blade."))
+	to_chat(H, span_warning("Святой воин. В то время как другие священнослужители проводили свободное время за изучением писаний, ты оттачивал свое мастерство владения клинком."))
 	H.adjust_blindness(-3)
 	belt = /obj/item/storage/belt/rogue/leather
 	backl = /obj/item/storage/backpack/rogue/satchel
