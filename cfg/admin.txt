@@ -7,4 +7,3 @@ muaru role=admin
 rogueray role=admin
 vladegegtest role=admin
 evenindeathistillserve role=admin
-lazurazur role=admin
